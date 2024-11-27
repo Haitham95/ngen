@@ -19,7 +19,7 @@ import {
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import Link from "next/link";
-import Logo from "../Logo/Logo";
+import Logo from "../../general/Logo";
 
 function Navbar() {
   return (

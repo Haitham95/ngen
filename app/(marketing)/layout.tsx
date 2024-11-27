@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito, Protest_Riot } from "next/font/google";
 import "../globals.css";
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/components/layout/Navbar";
 
 const nunito = Nunito({
   subsets: ["latin"],

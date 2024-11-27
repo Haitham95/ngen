@@ -1,6 +1,6 @@
-import HomepageHero from "@/components/Hero/HomepageHero";
-import HomepageAboutSection from "@/components/Sections/HomepageAboutSection";
-import HomepageNgenForSection from "@/components/Sections/HomepageNgenForSection";
+import HomepageHero from "@/components/pages/Home/Hero";
+import HomepageAboutSection from "@/components/pages/Home/AboutSection";
+import HomepageNgenForSection from "@/components/pages/Home/NgenForSection";
 
 export default function Home() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import FeatureCard from "../ui/Cards/FeatureCard";
+import FeatureCard from "../../../general/Cards/FeatureCard";
 
 function HomepageNgenForSection() {
   const DATA = [
