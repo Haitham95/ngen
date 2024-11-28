@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "../Logo/Logo";
+import Logo from "../../../general/Logo";
 import Image from "next/image";
 import ninjaSpaceGuy from "@/public/assets/images/space-ninja-guy.png";
-import Button from "../ui/Button/Button";
+import Button from "../../../general/Button";
 
 function HomepageHero() {
   return (

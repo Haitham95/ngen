@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import kidsOnLaptop from "@/public/assets/images/kids-on-laptop.png";
-import Button from "../ui/Button/Button";
+import Button from "../../../general/Button";
 
 function HomepageAboutSection() {
   return (
