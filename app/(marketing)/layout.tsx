@@ -6,7 +6,7 @@ import Navbar from "@/components/layout/Navbar";
 const nunito = Nunito({
   subsets: ["latin"],
   display: "swap",
-  weight: ["400"],
+  weight: ["400", "700", "800"],
   variable: "--font-nunito",
 });
 

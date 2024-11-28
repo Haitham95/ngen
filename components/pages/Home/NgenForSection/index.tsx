@@ -1,5 +1,6 @@
 import React from "react";
 import FeatureCard from "../../../general/Cards/FeatureCard";
+import { H2 } from "@/components/general/Heading";
 
 function HomepageNgenForSection() {
   const DATA = [
@@ -23,9 +24,7 @@ function HomepageNgenForSection() {
     <section className="bg-purple-lighter py-20">
       <div className="container mx-auto px-5 flex flex-col gap-12">
         <div>
-          <h2 className="text-5xl font-protestRiot text-purple-dark">
-            Why NGen
-          </h2>
+          <H2>Why NGen</H2>
         </div>
         {DATA.map((element, idx) => (
           <FeatureCard

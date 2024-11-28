@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import kidsOnLaptop from "@/public/assets/images/kids-on-laptop.png";
 import Button from "../../../general/Button";
+import { H2 } from "@/components/general/Heading";
 
 function HomepageAboutSection() {
   return (
@@ -12,7 +13,7 @@ function HomepageAboutSection() {
         </div>
         <div className="basis-2/3 flex flex-col gap-4 text-purple-dark">
           <div className="flex justify-between items-center">
-            <h2 className="text-5xl font-protestRiot">About us</h2>
+            <H2>About us</H2>
             <Button href="/about" variant="secondary">
               See more
             </Button>
