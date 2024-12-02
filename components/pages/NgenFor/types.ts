@@ -10,3 +10,8 @@ export interface IHowItWorksCardProps {
 export interface IHowItWorksData {
   data: IHowItWorksCardProps[];
 }
+
+export interface IFeaturedProps {
+  features: string[];
+  imgSrc: string;
+}
