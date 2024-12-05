@@ -49,12 +49,12 @@ function HomePageSocialProofSection() {
   ];
 
   return (
-    <section className="py-20">
-      <div className="container mx-auto py-5 flex flex-col gap-10">
+    <section className="py-6 md:py-10 lg:py-20">
+      <div className="container mx-auto px-5 flex flex-col gap-4 lg:gap-10">
         <H2>About our Journey</H2>
-        <div className="flex flex-col gap-20">
-          <div className="flex flex-col gap-10">
-            <h3 className="text-4xl font-protestRiot text-[#BD256D]">
+        <div className="flex flex-col gap-4 lg:gap-20">
+          <div className="flex flex-col gap-4 lg:gap-10">
+            <h3 className="text-xl md:text-2xl lg:text-4xl font-protestRiot text-[#BD256D]">
               Student work
             </h3>
             <Carousel
@@ -75,9 +75,9 @@ function HomePageSocialProofSection() {
               </CarouselContent>
             </Carousel>
           </div>
-          <div className="flex flex-col gap-10">
-            <h3 className="text-4xl font-protestRiot text-[#BD256D]">
-              Student work
+          <div className="flex flex-col gap-4 lg:gap-10">
+            <h3 className="text-xl md:text-2xl lg:text-4xl font-protestRiot text-[#BD256D]">
+              What Parents Say about us ?
             </h3>
             <Carousel
               opts={{ loop: true, align: "start", duration: 200 }}

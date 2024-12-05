@@ -21,24 +21,26 @@ function HomepageNgenWhySection() {
   ];
 
   return (
-    <section className="bg-purple-lighter py-20">
-      <div className="container mx-auto px-5 flex flex-col gap-12">
+    <section className="bg-purple-lighter py-6 md:py-10 lg:py-20">
+      <div className="container mx-auto px-5 flex flex-col gap-4 md:gap-7 lg:gap-12">
         <div>
           <H2>Why NGen</H2>
         </div>
-        {DATA.map((element, idx) => (
-          <FeatureCard
-            key={idx}
-            title={element.title}
-            description={element.description}
-            image={element.image}
-            variant={
-              element.variant && element.variant === "image-right"
-                ? "image-right"
-                : undefined
-            }
-          />
-        ))}
+        <div className="flex flex-col gap-4 md:flex-row lg:flex-col lg:gap-10">
+          {DATA.map((element, idx) => (
+            <FeatureCard
+              key={idx}
+              title={element.title}
+              description={element.description}
+              image={element.image}
+              variant={
+                element.variant && element.variant === "image-right"
+                  ? "image-right"
+                  : undefined
+              }
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

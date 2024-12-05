@@ -45,7 +45,7 @@ function Card({
         </div>
         <p className="text-pumpkin font-bold text-sm">{discountValue} OFF</p>
         <p className="text-sm">{numberOfLevels} Levels included</p>
-        <div className="flex justify-between text-sm text-[#655B62]">
+        <div className="flex justify-between text-xs md:text-sm text-[#655B62]">
           <div className="flex items-center gap-2">
             <Image
               src="/assets/images/icons/duration-icon.svg"

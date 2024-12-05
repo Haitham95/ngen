@@ -4,6 +4,7 @@ import HomepageNgenWhySection from "@/components/pages/Home/NgenWhySection";
 import HomepageTracksSection from "@/components/pages/Home/TracksSection";
 import HomepageNgenForSection from "@/components/pages/Home/NgenForSection";
 import HomePageSocialProofSection from "@/components/pages/Home/SocialProofSection";
+import HomepageBannerSection from "@/components/pages/Home/BannerSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <HomepageTracksSection />
       <HomepageNgenForSection />
       <HomePageSocialProofSection />
+      <HomepageBannerSection />
     </main>
   );
 }

@@ -49,10 +49,10 @@ function HomepageNgenForSection() {
   ];
 
   return (
-    <section className="bg-purple-light py-20">
+    <section className="bg-purple-light py-6 md:py-10 lg:py-20">
       <div className="container mx-auto px-5 flex flex-col gap-10">
         <H2>Ngen For</H2>
-        <div className="grid grid-cols-[minmax(345px,1fr)_minmax(335px,1fr)_minmax(515px,1fr)] grid-rows-[115px_310px_225px] gap-6 [&>*:nth-child(1)]:row-span-2 [&>*:nth-child(3)]:row-span-2 [&>*:nth-child(5)]:col-span-2">
+        <div className="grid grid-cols-1 grid-rows-4 gap-6 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:[&>*:nth-child(1)]:row-span-2 lg:[&>*:nth-child(6)]:col-span-2 xl:[&>*:nth-child(6)]:col-span-1 xl:grid-cols-[minmax(345px,1fr)_minmax(335px,1fr)_minmax(515px,1fr)] xl:grid-rows-[115px_310px_225px] xl:[&>*:nth-child(1)]:row-span-2 xl:[&>*:nth-child(3)]:row-span-2 xl:[&>*:nth-child(5)]:col-span-2">
           {DATA.map((el, idx) => (
             <NgenForCard
               key={idx}

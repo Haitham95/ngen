@@ -14,7 +14,7 @@ function NgenForCard({
 }: NgenForCardType) {
   if (variation === "logo") {
     return (
-      <div className="bg-white rounded-3xl flex justify-center items-center">
+      <div className="bg-white rounded-3xl justify-center items-center hidden xl:flex">
         <div className="lg:max-w-56 2xl:max-w-80">
           <Logo width={300} height={80} />
         </div>
@@ -22,7 +22,7 @@ function NgenForCard({
     );
   } else if (variation === "text") {
     return (
-      <div className="bg-white rounded-3xl flex justify-center items-center">
+      <div className="bg-white rounded-3xl justify-center items-center hidden xl:flex">
         <div className="text-4xl font-protestRiot max-w-64 flex flex-col text-center leading-relaxed gap-2">
           <h3 className="text-5xl text-rose">{title}</h3>
           <p className="text-blueberry">{description}</p>
