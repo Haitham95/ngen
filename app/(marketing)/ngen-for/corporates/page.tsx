@@ -1,5 +1,5 @@
-import { HowItWorksSection, Features } from '@/components/pages/NgenFor';
-import { PageWrapper } from '@/components/general';
+import { HowItWorksSection, Features, TracksOverviewSection } from '@/components/pages/NgenFor';
+import { ContactUs, PageWrapper } from '@/components/general';
 
 
 const howItWorksData = [
@@ -11,12 +11,23 @@ const howItWorksData = [
 
 const features = ['Live sessions', 'Live sessions', 'courses and tutorials', 'courses and tutorials', 'Interaction lessons', 'Interaction lessons', 'Assessments', 'Assessments', 'Assessments', 'Assessments']
 
+const overviewData = [
+  { text: 'Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools to help students discover new interests, connect with mentors, and develop practical skills they can apply both in school and in the real world.', imgSrc: '/tracks-overview.svg' },
+  { text: 'Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools ', imgSrc: '/certificate.svg' }
+]
+
+
 const NgenForCorporates = () => {
   return (
-    <PageWrapper classNames="px-5 py-6 md:px-12 md:pt-8 md:pb-6 xl:px-24 xl:pt-16 xl:pb-9 ">
-      <h2>for corporates</h2>{/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG*/}
+    <PageWrapper classNames="px-5 py-6 md:px-12 md:pt-8 md:pb-6 xl:px-24 xl:pt-16 xl:pb-9 max-w-[1440px]">
+      <h2>for corporates</h2>{/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
       <HowItWorksSection data={howItWorksData} />
       <Features features={features} imgSrc='/features-for-corporate.svg' />
+      <TracksOverviewSection data={overviewData} />
+
+      {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
+
+      <ContactUs />
     </PageWrapper>
   );
 };

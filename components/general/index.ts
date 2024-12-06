@@ -1,5 +1,9 @@
-import PageWrapper from './PageWrapper'
+import PageWrapper from './PageWrapper';
+import ContactUs from './ContactUs';
+import CallToAction from './CallToAction';
 
 export {
-  PageWrapper
+  PageWrapper,
+  ContactUs,
+  CallToAction,
 }
