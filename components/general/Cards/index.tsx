@@ -24,7 +24,7 @@ function Card({
   skillLevel,
 }: Props) {
   return (
-    <div className="bg-[#F5F5F5] rounded-2xl grid grid-rows-subgrid row-span-6">
+    <div className="bg-[#F5F5F5] rounded-2xl grid grid-rows-subgrid row-span-6 lg:my-5">
       <div className="">
         <Image
           src={image}
