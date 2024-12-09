@@ -31,7 +31,7 @@ const ContactUs = () => {
 
   return (
     <div>
-      <h3 className="font-bold text-xl text-pumpkin mb-8 xl:mb-10 md:text-2xl xl:text-3xl">
+      <h3 className="font-bold text-xl text-purple-dark font-protestRiot mb-8 xl:mb-10 md:text-2xl xl:text-3xl">
         Contact Us
       </h3>
 
