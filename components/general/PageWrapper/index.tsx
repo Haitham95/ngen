@@ -6,7 +6,7 @@ interface PageWrapperProps {
 }
 
 const PageWrapper: React.FC<PageWrapperProps> = ({ classNames, children }) => {
-  return <div className={classNames} >{children}</div>;
+  return <main className={classNames} >{children}</main>;
 };
 
 export default PageWrapper;
