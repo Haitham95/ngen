@@ -21,6 +21,10 @@ export default {
           light: "#E6CFF2",
           lighter: "#F0E3F7",
         },
+        gray: {
+          default: "#F5F5F5",
+          dark: "#878787",
+        },
         blueberry: "#627CEE",
         green: "#0BCA6C",
         yellow: "#EFD43E",
