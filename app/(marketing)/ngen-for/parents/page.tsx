@@ -21,7 +21,7 @@ const overviewData = [
 const NgenForParents = () => {
   return (
     <PageWrapper classNames="py-6 md:pt-8 md:pb-6 xl:pt-16 xl:pb-9">
-      <div className='max-w-[1440px] mx-auto px-5 md:px-12 xl:px-24'>
+      <div className='container mx-auto px-5 md:px-12 xl:px-24'>
       <h2>for parents</h2>{/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG*/}
       <HowItWorksSection data={howItWorksData} />
 

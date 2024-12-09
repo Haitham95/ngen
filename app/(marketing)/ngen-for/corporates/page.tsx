@@ -19,7 +19,7 @@ const overviewData = [
 
 const NgenForCorporates = () => {
   return (
-    <PageWrapper classNames="px-5 py-6 md:px-12 md:pt-8 md:pb-6 xl:px-24 xl:pt-16 xl:pb-9 max-w-[1440px]">
+    <PageWrapper classNames="px-5 py-6 md:px-12 md:pt-8 md:pb-6 xl:px-24 xl:pt-16 xl:pb-9 container mx-auto">
       <h2>for corporates</h2>{/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
       <HowItWorksSection data={howItWorksData} />
       <Features features={features} imgSrc='/features-for-corporate.svg' />

@@ -19,14 +19,14 @@ const overviewData = [
 
 const NgenForSchools = () => {
   return (
-    <PageWrapper classNames="px-5 py-6 md:px-12 md:pt-8 md:pb-6 xl:px-24 xl:pt-16 xl:pb-9 max-w-[1440px] mx-auto">
+    <PageWrapper classNames="px-5 py-6 md:px-12 md:pt-8 md:pb-6 xl:px-24 xl:pt-16 xl:pb-9 container mx-auto">
       <h2>for schools</h2>{/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG*/}
       <HowItWorksSection data={howItWorksData} />
       
       <Features features={features} imgSrc='/features-for-schools.svg' />
       <TracksOverviewSection data={overviewData} />
       
-      {/* TODO: USE THE HEADING COMPONENT INSTEAD OF THE h2 TAG */}
+      {/* TODO: USE OUR TRACKS COMPONENTS HERE */}
 
       <ContactUs />
     </PageWrapper>
