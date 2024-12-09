@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { Nunito, Protest_Riot } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 const nunito = Nunito({
   subsets: ["latin"],
   display: "swap",
-  weight: ["400"],
+  weight: ["400", "700", "800"],
   variable: "--font-nunito",
 });
 
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

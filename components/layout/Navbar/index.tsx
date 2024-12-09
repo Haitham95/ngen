@@ -20,11 +20,12 @@ import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import Logo from "../../general/Logo";
+import Button from "@/components/general/Button";
 
 function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-20 items-center justify-between">
+      <div className="container mx-auto px-5 flex h-20 items-center justify-between">
         <div className="flex items-center">
           <Link href="/">
             <Logo width={160} height={35} />
@@ -94,7 +95,9 @@ function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
         <div className="hidden md:block">
-          <Link href={"#"}>Sign in</Link>
+          <Button href="#" variant="primary">
+            Start Now
+          </Button>
         </div>
         <Sheet>
           <SheetTrigger asChild>
@@ -106,7 +109,6 @@ function Navbar() {
           <SheetContent side="right">
             <SheetHeader>
               <SheetTitle>Menu</SheetTitle>
-              <SheetDescription>Navigate through NGen Schools</SheetDescription>
             </SheetHeader>
             <div className="mt-4 flex flex-col space-y-4">
               <Link href="#" className="text-sm font-medium">
@@ -124,7 +126,9 @@ function Navbar() {
               <Link href="#" className="text-sm font-medium">
                 Blogs
               </Link>
-              <Link href={"#"}>Sign in</Link>
+              <Button href="#" variant="primary" takeFullWidth>
+                Start Now
+              </Button>
             </div>
           </SheetContent>
         </Sheet>
