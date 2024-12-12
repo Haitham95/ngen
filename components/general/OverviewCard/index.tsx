@@ -3,6 +3,8 @@ import Image from "next/image";
 import Rating from "../Rating";
 import Tag from "../Tag";
 
+// TODO: apply this component in the corperate, school and parents page
+
 const OverviewCard: React.FC<{
   text: string;
   imgSrc: string;
