@@ -60,7 +60,7 @@ async function SingleTrackPage({
           imgSrc={partnersData.imgSrc}
           partnersImgs={partnersData.partnerImgs}
         />
-        <section className="flex lg:bg-gray-default rounded-3xl p-6 justify-between ">
+        <section className="flex flex-col gap-6 sm:flex-row lg:bg-gray-default rounded-3xl p-6 justify-between ">
           <div className="flex flex-col gap-2 ">
             <h2 className="font-bold text-xl text-purple-dark md:text-2xl xl:font-medium xl:text-3xl">
               Pricing

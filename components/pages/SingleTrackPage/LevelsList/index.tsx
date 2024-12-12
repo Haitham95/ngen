@@ -8,7 +8,7 @@ function LevelsList({ levelsIds }: { levelsIds: string[] }) {
       name: "Photoshop",
       description:
         "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools to help students ",
-      mainImage: "",
+      mainImage: "/assets/images/level-placeholder.png",
       duration: 40,
       assessmentsNumber: 8,
       lecturesNumber: 20,
@@ -18,7 +18,7 @@ function LevelsList({ levelsIds }: { levelsIds: string[] }) {
       name: "Illustrator",
       description:
         "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools to help students ",
-      mainImage: "",
+      mainImage: "/assets/images/level-placeholder.png",
       duration: 50,
       assessmentsNumber: 8,
       lecturesNumber: 20,

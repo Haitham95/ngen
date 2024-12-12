@@ -28,14 +28,14 @@ const OverviewCard: React.FC<{
             Certification partners
           </h2>
           <p className="text-xl lg:text-2xl text-gray-dark">{text}</p>
-          <div className="flex items-center xl:gap-8">
+          <div className="flex items-center justify-between flex-wrap md:justify-start xl:gap-8">
             {partnersImgs &&
               partnersImgs.map((image) => (
                 <Image src={image.src} alt={image.alt} width={75} height={90} />
               ))}
           </div>
         </div>
-        <div className="self-center basis-1/5">
+        <div className="lg:self-center basis-1/5">
           <Image src={imgSrc} alt="Tracks Overview" width={315} height={270} />
         </div>
       </section>
@@ -48,7 +48,7 @@ const OverviewCard: React.FC<{
             Overview
           </h2>
           <p className="text-xl lg:text-2xl text-gray-dark">{text}</p>
-          <div className="flex items-center xl:gap-8">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-2 md:gap-8">
             {feedbackRating && <Rating feedbackRating={feedbackRating} />}
             {coursesNumber && (
               <Tag

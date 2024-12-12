@@ -2,6 +2,7 @@ import React from "react";
 import { LevelCardProps } from "../types";
 import Rating from "@/components/general/Rating";
 import Tag from "@/components/general/Tag";
+import Image from "next/image";
 
 function LevelCard({
   name,
@@ -13,15 +14,25 @@ function LevelCard({
   rating,
 }: LevelCardProps) {
   return (
-    <div className="rounded-3xl p-6 border-2 border-gray-default flex gap-6">
-      <div className="basis-1/5 border h-[175px] rounded-2xl self-center">
-        Image
+    <div className="rounded-3xl p-6 border-2 border-gray-default flex flex-col md:flex-row gap-6">
+      <div className="xl:basis-1/5 sm:basis-2/5 border h-[175px] rounded-2xl self-center flex justify-center items-center md:p-2">
+        <Image
+          src={mainImage}
+          width={340}
+          height={185}
+          alt="level placeholder alt"
+        />
       </div>
-      <div className="basis-4/5 flex flex-col gap-2">
-        <h3 className=" lg:text-3xl text-purple-dark">{name}</h3>
-        <p className="lg:text-2xl text-gray-dark">{description}</p>
-        <div className="flex items-center gap-8">
+      <div className="xl:basis-4/5 sm:basis-3/5 flex flex-col gap-2">
+        <h3 className="text-3xl text-purple-dark">{name}</h3>
+        <div className="lg:hidden">
           <Rating feedbackRating={rating} />
+        </div>
+        <p className="text-2xl text-gray-dark">{description}</p>
+        <div className="flex justify-between md:justify-start items-center md:gap-8">
+          <div className="hidden lg:block">
+            <Rating feedbackRating={rating} />
+          </div>
           <Tag
             icon="/assets/images/icons/duration-icon.svg"
             text={`${duration} Hours`}
