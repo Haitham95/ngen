@@ -22,6 +22,7 @@ export default {
           lighter: "#F0E3F7",
         },
         gray: {
+          tertiary: '#808080',
           default: "#F5F5F5",
           dark: "#878787",
         },
