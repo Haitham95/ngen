@@ -1,17 +1,17 @@
-'use client';
-import Image from 'next/image';
-import React from 'react';
-import Logo from '../Logo';
+"use client";
+import Image from "next/image";
+import React from "react";
+import Logo from "../Logo";
 
 interface ICallToActionProps {
   cta: string;
-  action: () => void;
+  action?: () => void;
 }
 
-const CallToAction: React.FC<ICallToActionProps> = ({ cta, action }) => {
+const CallToAction: React.FC<ICallToActionProps> = ({ cta, action = undefined }) => {
   return (
     <div
-      onClick={() => action()}
+      // onClick={() => action()}
       className="bg-[url('/callToAction.svg')] bg-cover bg-no-repeat bg-center relative flex items-center justify-between min-h-96"
     >
       <Image
