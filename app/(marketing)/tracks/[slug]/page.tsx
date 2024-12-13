@@ -5,6 +5,10 @@ import tracks from "./data.json";
 import OverviewCard from "@/components/general/OverviewCard";
 import LevelsList from "@/components/pages/SingleTrackPage/LevelsList";
 
+// If someone goes to a link not contaning the slug the system will redirect him to 404 page, for SSG not SSR
+// for more info: https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamicparams
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   // const tracks = await fetch(data).then((res) => res.json())
 
@@ -85,5 +89,3 @@ async function SingleTrackPage({
 }
 
 export default SingleTrackPage;
-
-export const dynamicParams = false;

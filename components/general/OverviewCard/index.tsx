@@ -9,18 +9,28 @@ const OverviewCard: React.FC<{
   text: string;
   imgSrc: string;
   feedbackRating?: number;
+  lecturesNumber?: number;
+  duration?: number;
+  ageGroup?: string;
   coursesNumber?: number;
   assessmentNumber?: number;
   partnersImgs?: { src: string; alt: string }[];
-  variant?: "overview" | "partners";
+  variant?:
+    | "overviewTrack"
+    | "partners"
+    | "overviewCourse"
+    | "overviewCourseFeatures";
 }> = ({
   text,
   imgSrc,
   feedbackRating,
   coursesNumber,
   assessmentNumber,
-  variant = "overview",
+  variant = "overviewTrack",
   partnersImgs = undefined,
+  lecturesNumber,
+  duration = 0,
+  ageGroup,
 }) => {
   if (variant === "partners") {
     return (
@@ -52,11 +62,32 @@ const OverviewCard: React.FC<{
           <p className="text-xl lg:text-2xl text-gray-dark">{text}</p>
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 md:gap-8">
             {feedbackRating && <Rating feedbackRating={feedbackRating} />}
+            {ageGroup && (
+              <Tag
+                icon="/assets/images/icons/age-group-icon.svg"
+                text={`${ageGroup}`}
+                alt="age group icon"
+              />
+            )}
+            {duration && (
+              <Tag
+                icon="/assets/images/icons/duration-icon.svg"
+                text={`${duration} Hours`}
+                alt="duration icon"
+              />
+            )}
             {coursesNumber && (
               <Tag
                 icon="/assets/images/icons/courses-icon.svg"
-                text={`${coursesNumber} Lectures`}
-                alt="Courses icon"
+                text={`${coursesNumber} Levels`}
+                alt="Level icon"
+              />
+            )}
+            {lecturesNumber && (
+              <Tag
+                icon="/assets/images/icons/courses-icon.svg"
+                text={`${lecturesNumber} Lectures`}
+                alt="Lecture icon"
               />
             )}
             {assessmentNumber && (
