@@ -70,8 +70,8 @@ async function SingleLevelPage({
               This level for
             </h2>
             <ul className="flex flex-col list-disc list-inside text-gray-dark lg:text-2xl">
-              {THIS_LEVEL_FOR_LIST.map((text) => (
-                <li>{text}</li>
+              {THIS_LEVEL_FOR_LIST.map((text, idx) => (
+                <li key={idx}>{text}</li>
               ))}
             </ul>
           </div>

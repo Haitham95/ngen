@@ -50,14 +50,20 @@ const OverviewCard: React.FC<{
           {partnersImgs && variant === "partners" && (
             <div className="flex items-center justify-between flex-wrap md:justify-start xl:gap-8">
               {partnersImgs.map((image) => (
-                <Image src={image.src} alt={image.alt} width={75} height={90} />
+                <Image
+                  key={image.alt}
+                  src={image.src}
+                  alt={image.alt}
+                  width={75}
+                  height={90}
+                />
               ))}
             </div>
           )}
           {variant === "coursePrerequisites" && listText && (
             <ul className="flex flex-col list-disc list-inside text-gray-dark lg:text-2xl">
-              {listText.map((textElement) => (
-                <li>{textElement}</li>
+              {listText.map((textElement, idx) => (
+                <li key={idx}>{textElement}</li>
               ))}
             </ul>
           )}
