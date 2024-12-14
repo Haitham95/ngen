@@ -21,6 +21,7 @@ import { Menu } from "lucide-react";
 import Link from "next/link";
 import Logo from "../../general/Logo";
 import Button from "@/components/general/Button";
+import { ROUTES } from "@/util/routes";
 
 function Navbar() {
   return (
@@ -33,13 +34,14 @@ function Navbar() {
         </div>
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
-            <NavigationMenuItem>
+            {/* About */}
+            {/* <NavigationMenuItem>
               <Link href="#" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   About us
                 </NavigationMenuLink>
               </Link>
-            </NavigationMenuItem>
+            </NavigationMenuItem> */}
             <NavigationMenuItem>
               <NavigationMenuTrigger>NGen For</NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -59,39 +61,48 @@ function Navbar() {
                       </Link>
                     </NavigationMenuLink>
                   </li>
-                  <ListItem href="#" title="For Individual">
+                  <ListItem
+                    href={ROUTES.NGEN_FOR.FOR_PARENTS}
+                    title="For Parents"
+                  >
                     Tailored learning for personal growth
                   </ListItem>
-                  <ListItem href="#" title="For Schools">
+                  <ListItem
+                    href={ROUTES.NGEN_FOR.FOR_SCHOOL}
+                    title="For Schools"
+                  >
                     Enhance your curriculum with cutting-edge tech education
                   </ListItem>
-                  <ListItem href="#" title="For Corporates">
+                  <ListItem
+                    href={ROUTES.NGEN_FOR.FOR_CORPORATES}
+                    title="For Corporates"
+                  >
                     Upskill your workforce for the digital age
                   </ListItem>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="#" legacyBehavior passHref>
+              <Link href={ROUTES.TRACKS} legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Tracks
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="#" legacyBehavior passHref>
+              <Link href={ROUTES.INSTRUCTORS} legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Instructors
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
-            <NavigationMenuItem>
+            {/* <NavigationMenuItem>
               <Link href="#" legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   Blogs
                 </NavigationMenuLink>
               </Link>
-            </NavigationMenuItem>
+            </NavigationMenuItem> */}
           </NavigationMenuList>
         </NavigationMenu>
         <div className="hidden md:block">
@@ -111,21 +122,36 @@ function Navbar() {
               <SheetTitle>Menu</SheetTitle>
             </SheetHeader>
             <div className="mt-4 flex flex-col space-y-4">
-              <Link href="#" className="text-sm font-medium">
+              {/* <Link href="#" className="text-sm font-medium">
                 About us
+              </Link> */}
+              <Link
+                href={ROUTES.NGEN_FOR.FOR_PARENTS}
+                className="text-sm font-medium"
+              >
+                For parents
               </Link>
-              <Link href="#" className="text-sm font-medium">
-                NGen For
+              <Link
+                href={ROUTES.NGEN_FOR.FOR_SCHOOL}
+                className="text-sm font-medium"
+              >
+                For schools
               </Link>
-              <Link href="#" className="text-sm font-medium">
+              <Link
+                href={ROUTES.NGEN_FOR.FOR_CORPORATES}
+                className="text-sm font-medium"
+              >
+                For corporates
+              </Link>
+              <Link href={ROUTES.TRACKS} className="text-sm font-medium">
                 Tracks
               </Link>
-              <Link href="#" className="text-sm font-medium">
+              <Link href={ROUTES.INSTRUCTORS} className="text-sm font-medium">
                 Instructors
               </Link>
-              <Link href="#" className="text-sm font-medium">
+              {/* <Link href="#" className="text-sm font-medium">
                 Blogs
-              </Link>
+              </Link> */}
               <Button href="#" variant="primary" takeFullWidth>
                 Start Now
               </Button>

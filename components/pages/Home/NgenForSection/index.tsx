@@ -2,6 +2,7 @@ import { H2 } from "@/components/general/Heading";
 import React from "react";
 import NgenForCard from "./NgenForCard";
 import { NgenForCardType } from "./types";
+import { ROUTES } from "@/util/routes";
 
 function HomepageNgenForSection() {
   const DATA: NgenForCardType[] = [
@@ -22,7 +23,7 @@ function HomepageNgenForSection() {
       title: "For Schools",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio vitae. Fugiat in sed eos id! Consequuntur labore officiis commodi.",
-      href: "#",
+      href: ROUTES.NGEN_FOR.FOR_SCHOOL,
     },
     {
       title: "Empower",
@@ -32,11 +33,11 @@ function HomepageNgenForSection() {
 
     {
       image: "/assets/images/NgenFor/corperate-kid.png",
-      alt: "corperate kids image",
-      title: "For Corperates",
+      alt: "corporate kids image",
+      title: "For Corporates",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio vitae. Fugiat in sed eos id! Consequuntur labore officiis commodi.",
-      href: "#",
+      href: ROUTES.NGEN_FOR.FOR_CORPORATES,
     },
     {
       image: "/assets/images/NgenFor/parent-with-kid.png",
@@ -44,7 +45,7 @@ function HomepageNgenForSection() {
       title: "For Parents",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, distinctio vitae. Fugiat in sed eos id! Consequuntur labore officiis commodi.",
-      href: "#",
+      href: ROUTES.NGEN_FOR.FOR_PARENTS,
     },
   ];
 
