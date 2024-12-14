@@ -6,6 +6,7 @@ function LevelsList({ levelsIds }: { levelsIds: string[] }) {
   const DATA: LevelCardProps[] = [
     {
       name: "Photoshop",
+      slug: "course",
       description:
         "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools to help students ",
       mainImage: "/assets/images/level-placeholder.png",
@@ -16,6 +17,7 @@ function LevelsList({ levelsIds }: { levelsIds: string[] }) {
     },
     {
       name: "Illustrator",
+      slug: "course",
       description:
         "Our mission is simple: to make modern, industry-relevant skills accessible and enjoyable for teenagers. We combine live, expert-led courses with interactive tools to help students ",
       mainImage: "/assets/images/level-placeholder.png",
@@ -38,6 +40,7 @@ function LevelsList({ levelsIds }: { levelsIds: string[] }) {
           assessmentsNumber={level.assessmentsNumber}
           lecturesNumber={level.lecturesNumber}
           rating={level.rating}
+          slug={level.slug}
         />
       ))}
     </section>

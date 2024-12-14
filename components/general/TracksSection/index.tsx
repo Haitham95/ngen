@@ -2,12 +2,12 @@ import Card from "@/components/general/Cards";
 import { H2 } from "@/components/general/Heading";
 import React from "react";
 
-function HomepageTracksSection({title}: {title: string}) {
+function HomepageTracksSection({ title }: { title: string }) {
   const DATA = [
     {
       image: "/assets/images/track-placeholder.png",
       title: "Graphics",
-      slug: "graphics",
+      slug: "graphic-design",
       status: "Available",
       discountValue: "20%",
       numberOfLevels: "4",
@@ -17,7 +17,7 @@ function HomepageTracksSection({title}: {title: string}) {
     {
       image: "/assets/images/track-placeholder.png",
       title: "Graphics",
-      slug: "graphics",
+      slug: "graphic-design",
       status: "Available",
       discountValue: "20%",
       numberOfLevels: "4",
@@ -27,7 +27,7 @@ function HomepageTracksSection({title}: {title: string}) {
     {
       image: "/assets/images/track-placeholder.png",
       title: "Graphics",
-      slug: "graphics",
+      slug: "graphic-design",
       status: "Available",
       discountValue: "20%",
       numberOfLevels: "4",
@@ -37,7 +37,7 @@ function HomepageTracksSection({title}: {title: string}) {
     {
       image: "/assets/images/track-placeholder.png",
       title: "Graphics design",
-      slug: "graphics",
+      slug: "graphic-design",
       status: "Available",
       discountValue: "20%",
       numberOfLevels: "4",
@@ -47,7 +47,7 @@ function HomepageTracksSection({title}: {title: string}) {
     {
       image: "/assets/images/track-placeholder.png",
       title: "Graphics",
-      slug: "graphics",
+      slug: "graphic-design",
       status: "Available",
       discountValue: "20%",
       numberOfLevels: "4",
@@ -57,7 +57,7 @@ function HomepageTracksSection({title}: {title: string}) {
     {
       image: "/assets/images/track-placeholder.png",
       title: "Graphics",
-      slug: "graphics",
+      slug: "graphic-design",
       status: "Available",
       discountValue: "20%",
       numberOfLevels: "4",
@@ -67,7 +67,7 @@ function HomepageTracksSection({title}: {title: string}) {
     {
       image: "/assets/images/track-placeholder.png",
       title: "Graphics",
-      slug: "graphics",
+      slug: "graphic-design",
       status: "Available",
       discountValue: "20%",
       numberOfLevels: "4",
@@ -77,7 +77,7 @@ function HomepageTracksSection({title}: {title: string}) {
     {
       image: "/assets/images/track-placeholder.png",
       title: "Graphics design",
-      slug: "graphics",
+      slug: "graphic-design",
       status: "Available",
       discountValue: "20%",
       numberOfLevels: "4",
