@@ -12,8 +12,9 @@ function CurriculumList({
         Curriculum overview
       </h2>
       {curriculum &&
-        curriculum.map((LectureCategory) => (
+        curriculum.map((LectureCategory, idx) => (
           <CurriculumCard
+            key={idx}
             name={LectureCategory.name}
             description={LectureCategory.description}
             duration={LectureCategory.duration}

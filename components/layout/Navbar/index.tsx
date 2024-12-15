@@ -11,7 +11,6 @@ import {
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -35,13 +34,13 @@ function Navbar() {
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             {/* About */}
-            {/* <NavigationMenuItem>
-              <Link href="#" legacyBehavior passHref>
+            <NavigationMenuItem>
+              <Link href={ROUTES.ABOUT} legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   About us
                 </NavigationMenuLink>
               </Link>
-            </NavigationMenuItem> */}
+            </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger>NGen For</NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -122,9 +121,9 @@ function Navbar() {
               <SheetTitle>Menu</SheetTitle>
             </SheetHeader>
             <div className="mt-4 flex flex-col space-y-4">
-              {/* <Link href="#" className="text-sm font-medium">
+              <Link href={ROUTES.ABOUT} className="text-sm font-medium">
                 About us
-              </Link> */}
+              </Link>
               <Link
                 href={ROUTES.NGEN_FOR.FOR_PARENTS}
                 className="text-sm font-medium"

@@ -1,7 +1,6 @@
 "use client";
 import { ContactUs, PageWrapper } from "@/components/general";
 import { H2 } from "@/components/general/Heading";
-import HomePageSocialProofSection from "@/components/pages/Home/SocialProofSection";
 import SocialProofCard from "@/components/pages/Home/SocialProofSection/SocialProofCard";
 import {
   Carousel,

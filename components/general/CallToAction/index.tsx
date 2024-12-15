@@ -5,15 +5,11 @@ import Logo from "../Logo";
 
 interface ICallToActionProps {
   cta: string;
-  action?: () => void;
 }
 
-const CallToAction: React.FC<ICallToActionProps> = ({ cta, action = undefined }) => {
+const CallToAction: React.FC<ICallToActionProps> = ({ cta }) => {
   return (
-    <div
-      // onClick={() => action()}
-      className="bg-[url('/callToAction.svg')] bg-cover bg-no-repeat bg-center relative flex items-center justify-between min-h-96"
-    >
+    <div className="bg-[url('/callToAction.svg')] bg-cover bg-no-repeat bg-center relative flex items-center justify-between min-h-96">
       <Image
         src="/callToActionRockets.svg"
         alt="rocket"

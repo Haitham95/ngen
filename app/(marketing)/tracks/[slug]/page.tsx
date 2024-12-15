@@ -81,7 +81,7 @@ async function SingleTrackPage({
             </h3>
           </div>
         </section>
-        <LevelsList levelsIds={track.levels_ids} />
+        <LevelsList />
       </PageWrapper>
       <CallToAction cta="Get Started" />
     </main>

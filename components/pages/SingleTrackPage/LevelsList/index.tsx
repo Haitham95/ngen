@@ -2,7 +2,7 @@ import React from "react";
 import { LevelCardProps } from "../types";
 import LevelCard from "../LevelCard";
 
-function LevelsList({ levelsIds }: { levelsIds: string[] }) {
+function LevelsList() {
   const DATA: LevelCardProps[] = [
     {
       name: "Photoshop",
@@ -31,8 +31,9 @@ function LevelsList({ levelsIds }: { levelsIds: string[] }) {
   return (
     <section className="flex flex-col gap-6">
       <h2 className="text-2xl lg:text-4xl text-pumpkin font-bold">Levels</h2>
-      {DATA.map((level) => (
+      {DATA.map((level, idx) => (
         <LevelCard
+          key={idx}
           name={level.name}
           description={level.description}
           mainImage={level.mainImage}
